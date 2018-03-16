@@ -1,0 +1,2 @@
+#!/bin/bash
+avconv -i concat:$1\|$2 -c:v libx264 -c:a copy $1.mkv
