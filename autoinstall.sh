@@ -20,7 +20,6 @@ apps=(
 #default
 "htop"
 "mc"
-"net-tools"
 #kell a ServerInfo programunk működéséhez
 "sysstat"
 )
