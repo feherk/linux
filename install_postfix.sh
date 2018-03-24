@@ -49,4 +49,4 @@ sudo sh -c "echo [smtp.gmail.com]:587 $mailuser > /etc/postfix/sasl/passwd"
 sudo chmod 400 /etc/postfix/sasl/passwd
 sudo postmap /etc/postfix/sasl/passwd
 sudo rm /etc/postfix/sasl/passwd
-sudo sed -i 's/;sendmail_path =/sendmail_path = \/usr\/sbin\/sendmail -t -i/g' /etc/php5/apache2/php.ini
+sudo sed -i 's/;sendmail_path =/sendmail_path = \/usr\/sbin\/sendmail -t -i/g' /etc/php/7.2/apache2/php.ini
