@@ -1,2 +1,2 @@
 #!/bin/bash
-df -T | mail -s "disk space report" email@email.hu
+df -h -x tmpfs | mail -s "disk space report" email@email.hu
