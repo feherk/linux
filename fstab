@@ -6,12 +6,16 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/sdb2 during installation
-UUID=fe561756-62bd-473b-b89f-628fa96650fb /               ext4    errors=remount-ro 0       1
+UUID=b4fe8bc5-9e30-4a1d-a36a-a166b75761ed /               ext4    errors=remount-ro 0       1
 # /boot/efi was on /dev/sdb1 during installation
 UUID=479E-C458  /boot/efi       vfat    umask=0077      0       1
 # swap was on /dev/sdb3 during installation
-UUID=abe26155-a301-46d4-8fa7-12590e9fa4a0 none            swap    sw              0       0
+UUID=491aeff6-b9d9-43f2-aa10-0d4b26f77b89 none            swap    sw              0       0
 
-#/dev/sda2	/mnt/hdd	auto	uid=33,gid=33,nodev,nofail,dmask=007	0	0
-/dev/sda1	/mnt/hdd	ext4	nosuid,nodev,nofail	0	0
-/dev/sdb1	/mnt/hdd2	ext4	nosuid,nodev,nofail	0	0
+
+#UUID="5a261d55-0a3a-44d6-8c46-efc3ee4d9ec3"	/mnt/hdd1	ext4	defaults,noatime	0	0
+#UUID="c0d3d655-dfab-4ceb-8454-bf600e0acedf"	/mnt/hdd2	ext4	defaults,noatime	0	0
+
+#RAID
+UUID="8da9e1b2-1e35-47b4-86cf-598351ff1a11"	/mnt/hdd1	ext4	defaults,noatime	0	0
+
